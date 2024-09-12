@@ -5,3 +5,7 @@
 - [Payload](https://github.com/payloadcms/payload) already installed into Next.js
 - PostgreSQL adapter configured for Neon
 - Cloud Storage plugin configured for [Vercel Blob Storage](https://vercel.com/docs/storage/vercel-blob)
+
+- Get latest pairs from Solana blockchain
+- Determine purchasability
+- Buy -> Sell

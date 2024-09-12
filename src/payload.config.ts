@@ -1,4 +1,6 @@
-import { postgresAdapter } from '@payloadcms/db-postgres'
+// import { postgresAdapter } from '@payloadcms/db-postgres'
+
+import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
 import path from 'path'
@@ -22,11 +24,14 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
-  db: postgresAdapter({
-    pool: {
-      connectionString: process.env.POSTGRES_URL,
-    },
+  db: mongooseAdapter({
+    url: process.env.DATABASE_URI,
   }),
+  // db: postgresAdapter({
+  //   pool: {
+  //     connectionString: process.env.POSTGRES_URL,
+  //   },
+  // }),
 
   sharp,
 

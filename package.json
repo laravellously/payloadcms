@@ -1,5 +1,5 @@
 {
-  "name": "vercel-deploy-payload-postgres",
+  "name": "payloadcms",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@payloadcms/db-postgres": "3.0.0-beta.58",
+    "@payloadcms/db-mongodb": "1.7.2",
     "@payloadcms/next": "3.0.0-beta.58",
     "@payloadcms/plugin-cloud-storage": "3.0.0-beta.58",
     "@payloadcms/richtext-lexical": "3.0.0-beta.58",
